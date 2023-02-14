@@ -15,7 +15,7 @@ jobs:
      runs-on: ubuntu-latest
      environment: 
       name: dev
-      url: 'joycecosta.com'
+      url: 'https://github.com/joycelopes'
      needs: build
      steps:
       - name: Run a one-line script
@@ -27,7 +27,7 @@ jobs:
        runs-on: ubuntu-latest
        environment: 
          name: hmg
-         url: 'joycecosta.com'
+         url: 'https://github.com/joycelopes'
        needs: deploy-dev
        steps:
         - name: Run a one-line script
@@ -38,7 +38,7 @@ jobs:
        runs-on: ubuntu-latest
        environment: 
          name: prd
-         url: 'joycecosta.com'
+         url: 'https://github.com/joycelopes'
        needs: deploy-hmg
        steps:
         - name: Run a one-line script
